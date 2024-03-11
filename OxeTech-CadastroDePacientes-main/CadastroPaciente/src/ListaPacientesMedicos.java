@@ -62,6 +62,36 @@ public class ListaPacientesMedicos {
         }
     }
 
+    public void deletarPaciente() {
+        System.out.print("Digite o CPF do paciente que deseja deletar: ");
+        String cpf = scanner.nextLine();
+
+        for (Paciente paciente : listaPacientes) {
+            if (paciente.getCpf().equals(cpf)) {
+                listaPacientes.remove(paciente);
+                System.out.println("Paciente removido com sucesso.");
+                return;
+            }
+        }
+
+        System.out.println("Paciente não encontrado com o CPF fornecido.");
+    }
+
+    public void deletarMedico() {
+        System.out.print("Digite o CPF do médico que deseja deletar: ");
+        String cpf = scanner.nextLine();
+
+        for (Medico medico : listaMedicos) {
+            if (medico.getCpf().equals(cpf)) {
+                listaMedicos.remove(medico);
+                System.out.println("Médico removido com sucesso.");
+                return;
+            }
+        }
+
+        System.out.println("Médico não encontrado com o CPF fornecido.");
+    }
+
     public void adicionarNovaEspecialidade() {
         System.out.print("Digite a nova especialidade: ");
         String novaEspecialidade = scanner.nextLine();

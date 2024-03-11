@@ -31,10 +31,17 @@ public class Main {
                     break;
                 case 7:
                     adicionarNovaEspecialidade();
-                    break;
+                    break;       
                 case 8:
+                    deletarPaciente();
+                    break;
+                case 9:
+                    deletarMedico();
+                    break;
+                case 10:
                     System.out.println("Saindo do programa.");
                     System.exit(0);
+                    break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
@@ -50,6 +57,8 @@ public class Main {
         System.out.println("6. Listar consultas");
         System.out.println("7. Adicionar nova especialidade");
         System.out.println("8. Sair");
+        System.out.println("9. Deletar paciente");
+        System.out.println("10. Deletar médico");
         System.out.print("Escolha uma opção: ");
     }
 
@@ -73,10 +82,19 @@ public class Main {
         lista.adicionarNovaEspecialidade();
     }
 
-    public static void agendar() {;
+    private static void agendar() {
         Consulta.agendarConsulta();
     }
-    public static void listar(){
+
+    private static void listar() {
         Consulta.listarConsultas();
+    }
+
+    private static void deletarPaciente() {
+        lista.deletarPaciente();
+    }
+
+    private static void deletarMedico() {
+        lista.deletarMedico();
     }
 }
