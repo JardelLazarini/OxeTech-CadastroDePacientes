@@ -30,6 +30,9 @@ public class Main {
                     listar();
                     break;
                 case 7:
+                    adicionarNovaEspecialidade();
+                    break;
+                case 8:
                     System.out.println("Saindo do programa.");
                     System.exit(0);
                 default:
