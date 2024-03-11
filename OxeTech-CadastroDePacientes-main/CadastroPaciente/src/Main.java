@@ -56,9 +56,9 @@ public class Main {
         System.out.println("5. Agendar consultas");
         System.out.println("6. Listar consultas");
         System.out.println("7. Adicionar nova especialidade");
-        System.out.println("8. Sair");
-        System.out.println("9. Deletar paciente");
-        System.out.println("10. Deletar médico");
+        System.out.println("8. Deletar paciente");
+        System.out.println("9. Deletar médico");
+        System.out.println("10. Sair");
         System.out.print("Escolha uma opção: ");
     }
 
